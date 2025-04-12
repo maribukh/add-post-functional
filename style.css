@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid red;
 }
 
 body {
@@ -12,14 +11,32 @@ body {
 
 .container {
     width: 468px;
+    margin: 5rem auto;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #252728;
     padding-top: 0.75rem;
     padding-bottom: 0.625rem;
     padding-left: 1rem;
     padding-right: 1rem;
-    margin: 5rem auto;
-    background-color: #252728;
     border-radius: 0.375rem;
+}
 
+.input-container .img-bgd {
+    padding: 20px;
+    margin-right: 0.5rem;
+}
+
+.img-bgd {
+    background-image: url(./profile-photo.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 100%;
 }
 
 .input-span {
@@ -27,9 +44,98 @@ body {
     padding: 0.5rem 0.75rem;
     font-size: 1.2rem;
     font-weight: 500;
-    border-radius: 10%
+    border-radius: 20px;
+    background-color: #38393b;
 }
 
-span {
+.input-span span {
     color: #6f7276;
+}
+
+.post-container {
+    height: 220px;
+    margin-top: 1rem;
+    border-radius: 0.375rem;
+    /* padding-top: 0.75rem; */
+    padding-bottom: 0.625rem;
+    background-color: #252728;
+    border: 1px solid rgba(255, 255, 255, .1);
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-bottom: 1px solid rgb(255 255 255 / 5%);
+    height: 60px;
+}
+
+.top h1 {
+    color: #e2e5e9;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.top .cancel {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 1rem;
+    top: 20%;
+    background-color: #38393b;
+    border-radius: 50%;
+    color: #6f7276;
+    cursor: pointer;
+}
+
+.post-container .img-bgd {
+    width: 40px;
+    height: 40px;
+}
+
+.post-container .bottom {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: #e2e5e9;
+}
+
+.person {
+    display: flex;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.person .right-side {
+    margin-left: 1rem;
+}
+
+.person p {
+    margin-bottom: 0.2rem;
+}
+
+.person select {
+    width: fit-content;
+    padding: 0.2em 0.5em 0.2em 1.5em;
+    background-image: url(./public.svg);
+    background-repeat: no-repeat;
+    background-size: 0.8em auto;
+    background-position: 0.4em center;
+    background-color: #38393b;
+    font-size: 0.75rem;
+    border: none;
+    outline: none;
+    color: #e2e5e9;
+    border-radius: 6px;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+
+}
+
+.person option {
+    margin-left: 2rem;
 }
