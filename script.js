@@ -10,3 +10,8 @@ function togglePostDetails() {
     postContainer.style.display = "none";
   }
 }
+
+function deleteButton(element) {
+  let postContainer = element.closest(".post-container");
+  postContainer.style.display = "none";
+}

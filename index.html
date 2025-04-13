@@ -16,10 +16,10 @@
   </head>
   <body>
     <div class="container">
-      <div class="post-container d-none">
+      <div class="post-container d-none element">
         <div class="top">
           <h1>Create Post</h1>
-          <div class="cancel">
+          <div class="cancel" onclick="deleteButton(this)">
             <span class="material-symbols-outlined"> close </span>
           </div>
         </div>
@@ -46,12 +46,12 @@
           </div>
         </div>
       </div>
-      <div class="press-container">
-        <div class="img-bgd"></div>
-        <div class="press-span">
-          <span onclick="togglePostDetails()" id="spanPress"
-            >What is on your mind, Sara?</span
-          >
+      <div class="added-post-container">
+        <div class="press-container">
+          <div class="img-bgd"></div>
+          <div class="press-span" onclick="togglePostDetails()">
+            <span id="spanPress">What is on your mind, Sara?</span>
+          </div>
         </div>
       </div>
     </div>

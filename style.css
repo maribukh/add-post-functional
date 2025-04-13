@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 body {
@@ -190,6 +190,11 @@ button:hover,
     cursor: pointer;
     background-color: #434447;
     color: #f4f5f7;
+}
+
+.element {
+    transition-duration: 1.5s;
+    transition-delay: .1s;
 }
 
 .d-none {
