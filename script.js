@@ -17,7 +17,15 @@ function togglePostDetails() {
 
 function deleteButton(element) {
   let postBox = element.closest(".postBox");
-  postBox.remove();
+  if (postBox) {
+    postBox.remove(); 
+  } else {
+    let createPostContainer = document.querySelector(".post-container");
+    let postSection = document.querySelector(".post");
+    createPostContainer.style.display = "none";
+    postSection.style.display = "block";
+    document.querySelector(".input-container input").value = "";
+  }
 }
 
 function addPost() {
