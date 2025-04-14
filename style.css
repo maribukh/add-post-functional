@@ -196,7 +196,6 @@ button:hover,
 .post {
   width: 100%;
   margin-top: 2rem;
-  border: 1px solid green;
   color: #6f7276;
 }
 
@@ -213,7 +212,6 @@ button:hover,
 
 .postBox .person {
   padding: 0;
-  flex-direction: column;
 }
 
 .text {
@@ -223,6 +221,34 @@ button:hover,
 }
 
 .person-info-wrapper {}
+
+.postBox .img-bgd {
+  width: 40px;
+  height: 40px;
+  background-image: url(./images/profile-photo.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 100%;
+}
+
+.time-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin-top: 0.2rem;
+}
+
+.time-icon {
+  width: 14px;
+  height: 14px;
+  opacity: 0.6;
+}
+
+.timestamp {
+  font-size: 0.75rem;
+  color: #9d9e9e;
+}
 
 .element {
   transition-duration: 1.5s;
