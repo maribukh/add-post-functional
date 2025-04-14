@@ -256,6 +256,30 @@ button:hover,
   color: #9d9e9e;
 }
 
+.postBox .person {
+  position: relative;
+}
+
+.postBox .cancel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #38393b;
+  border-radius: 50%;
+  color: #6f7276;
+  cursor: pointer;
+}
+
+.postBox .cancel:hover {
+  background-color: #434447;
+  color: #f4f5f7;
+}
+
 .element {
   transition-duration: 1.5s;
   transition-delay: 0.1s;

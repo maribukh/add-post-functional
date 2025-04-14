@@ -16,11 +16,8 @@ function togglePostDetails() {
 }
 
 function deleteButton(element) {
-  let postContainer = element.closest(".post-container");
-  let postSection = document.querySelector(".post");
-  postContainer.style.display = "none";
-  postSection.style.display = "block";
-  document.querySelector(".input-container input").value = "";
+  let postBox = element.closest(".postBox");
+  postBox.remove();
 }
 
 function addPost() {
@@ -29,6 +26,7 @@ function addPost() {
   let postBox = document.createElement("div");
   let personOriginal = document.querySelector(".person");
   let personClone = personOriginal.cloneNode(true);
+  let cancel = document.createElement("div");
   let textPost = document.createElement("p");
   let postContainer = document.querySelector(".post-container");
 
@@ -75,11 +73,18 @@ function addPost() {
   if (input.value !== "") {
     postBox.className = "postBox";
     textPost.className = "text";
+    cancel.className = "cancel";
+    cancel.innerHTML = '<span class="material-symbols-outlined"> close </span>';
+    cancel.onclick = function () {
+      deleteButton(cancel);
+    };
+
     textPost.textContent = input.value;
+
+    personClone.appendChild(cancel);
 
     postBox.appendChild(personClone);
     postBox.appendChild(textPost);
-    post.appendChild(postBox);
 
     post.prepend(postBox);
 
