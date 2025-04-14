@@ -13,14 +13,16 @@ body {
 }
 
 .container {
-  display: flex;
-  justify-content: center;
-  /* margin: 5rem auto; */
+  /* display: flex;
+  justify-content: center; */
   position: relative;
   height: 100vh;
+  margin: 5rem auto;
+  width: 35%;
 }
 
 .press-container {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -60,9 +62,9 @@ body {
 }
 
 .post-container {
-  /* width: 100%; */
+  width: 100%;
   /* margin-top: 1rem; */
-  width: 468px;
+  /* width: 468px; */
   border-radius: 0.375rem;
   padding-bottom: 0.625rem;
   position: absolute;

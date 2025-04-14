@@ -38,3 +38,16 @@ function addPost() {
     postContainer.style.display = "none";
   }
 }
+
+
+// on keydown
+document.addEventListener("DOMContentLoaded", function () {
+  const input = document.querySelector(".input-container input");
+
+  input.addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+      event.preventDefault();
+      addPost();
+    }
+  });
+});
