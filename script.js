@@ -14,4 +14,8 @@ function togglePostDetails() {
 function deleteButton(element) {
   let postContainer = element.closest(".post-container");
   postContainer.style.display = "none";
+
+  let input = document.querySelector(".input-container input");
+
+  input.value = "";
 }
