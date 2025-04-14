@@ -1,0 +1,83 @@
+@media (max-width: 1024px) {
+    .container {
+        width: 60%;
+        margin: 3rem auto;
+    }
+
+    input {
+        font-size: 1.2rem;
+    }
+
+    .press-span {
+        font-size: 1rem;
+    }
+
+    .top h1 {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 85%;
+        margin: 2rem auto;
+    }
+
+    .postBox {
+        padding: 0.75rem;
+    }
+
+    .img-bgd,
+    .postBox .img-bgd,
+    .post-container .img-bgd {
+        width: 35px;
+        height: 35px;
+    }
+
+    .press-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .press-span {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+        margin: 1rem auto;
+    }
+
+    .press-span {
+        font-size: 0.95rem;
+    }
+
+    .top h1 {
+        font-size: 1rem;
+    }
+
+    input {
+        font-size: 1rem;
+    }
+
+    .timestamp {
+        font-size: 0.65rem;
+    }
+
+    .time-icon {
+        width: 12px;
+        height: 12px;
+    }
+
+    button {
+        font-size: 0.85rem;
+    }
+}
