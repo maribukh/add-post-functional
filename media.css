@@ -34,12 +34,6 @@
         height: 35px;
     }
 
-    .press-container {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.5rem;
-    }
-
     .press-span {
         width: 100%;
         font-size: 1rem;
