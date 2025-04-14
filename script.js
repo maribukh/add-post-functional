@@ -81,12 +81,13 @@ function addPost() {
     postBox.appendChild(textPost);
     post.appendChild(postBox);
 
+    post.prepend(postBox);
+
     input.value = "";
     postContainer.style.display = "none";
     post.style.display = "block";
   }
 }
-
 
 document.addEventListener("DOMContentLoaded", function () {
   let input = document.querySelector(".input-container input");
